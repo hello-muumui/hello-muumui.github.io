@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hanatour — Jeeeun.design</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .hana-hero {
+      background: #ffeee6;
+    }
+    .hana-hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: linear-gradient(199.25deg, #efdfff 6.59%, rgba(255, 225, 240, 0.82) 26.37%, rgba(255, 237, 252, 0.32) 72.74%);
+    }
+    .hana-hero .stage {
+      width: 1400px;
+      height: 1108px;
+    }
+    .hana-hero__logo {
+      position: absolute;
+      top: 140px;
+      left: 615px;
+    }
+    .hana-hero__tagline {
+      position: absolute;
+      top: 184px;
+      left: 570px;
+      margin: 0;
+      font-size: 16px;
+      line-height: 20px;
+      color: rgba(51, 51, 51, 0.8);
+      white-space: nowrap;
+    }
+    .hana-hero__mockup {
+      position: absolute;
+      top: 276px;
+      left: 549px;
+      width: 320px;
+      height: 660px;
+      border-radius: 40px;
+      background: rgba(255, 255, 255, 0.4);
+    }
+    .hana-hero__screen {
+      position: absolute;
+      inset: 10px;
+      border-radius: 32px;
+      overflow: hidden;
+    }
+    .hana-hero__app {
+      position: absolute;
+      top: 824px;
+      left: 471px;
+      width: 144px;
+      height: 144px;
+      border-radius: 32px;
+      overflow: hidden;
+      background: #fff;
+    }
+
+    .hana-screens .stage {
+      width: 1400px;
+      height: 1015px;
+    }
+    .hana-screens__screen {
+      position: absolute;
+      top: 169px;
+      width: 325px;
+      height: 676px;
+      border-radius: 16px;
+      overflow: hidden;
+    }
+    .hana-screens__box {
+      position: absolute;
+      border-radius: 3px;
+      background: #f2f6f8;
+    }
+  </style>
+</head>
+<body>
+  <header class="gnb">
+    <a class="gnb__logo" href="./">Jeeeun.design</a>
+    <ul class="gnb__menu">
+      <li><a href="./">Work</a></li>
+      <li><a href="#" data-about>About</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <!-- 01 hero -->
+    <section class="section hana-hero">
+      <div class="section__inner stage-wrap" style="aspect-ratio:1400/1108;">
+        <div class="stage stage--zoom">
+          <img class="hana-hero__logo" src="images/hanatour/logo.svg" alt="HANATOUR" width="171" height="28">
+          <p class="hana-hero__tagline">Reorganization:The Next Generation</p>
+          <!-- Figma: drop shadows use Multiply blend -->
+          <div class="hero-shadow" style="left:549px; top:276px; width:320px; height:660px; border-radius:40px; box-shadow:28px 8px 48px 0 #f1eaf2;"></div>
+          <div class="hana-hero__mockup">
+            <div class="hana-hero__screen">
+              <div class="crop" style="left:0; top:-6px; width:300px; height:259.385px;">
+                <img src="images/hanatour/pkg-top.png" alt="하나투어 패키지 메인 화면" style="left:0; top:-0.25%; width:100%; height:288.82%;">
+              </div>
+              <div class="crop" style="left:0; top:253px; width:300px; height:442px;">
+                <img src="images/hanatour/pkg-top.png" alt="" style="left:0; top:-69.46%; width:100%; height:169.44%;">
+              </div>
+            </div>
+          </div>
+          <div class="hero-shadow" style="left:471px; top:824px; width:144px; height:144px; border-radius:32px; box-shadow:20px 8px 60px 0 rgba(205, 189, 207, 0.6);"></div>
+          <div class="hana-hero__app">
+            <img src="images/hanatour/app-icon-1.png" alt="" style="position:absolute; left:14.828px; top:14.828px; width:114.353px; height:114.353px; object-fit:cover;">
+            <img src="images/hanatour/app-icon-2.png" alt="" style="position:absolute; left:14px; top:14px; width:116px; height:116px; object-fit:cover;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-white">
+      <div class="section__inner"><img src="images/hanatour/02.png" alt="" width="1400" height="620" loading="lazy"></div>
+    </section>
+    <section class="section bg-gray">
+      <div class="section__inner"><img src="images/hanatour/03.png" alt="" width="1400" height="933" loading="lazy"></div>
+    </section>
+
+    <!-- 04 three screens -->
+    <section class="section bg-white hana-screens">
+      <div class="section__inner stage-wrap" style="aspect-ratio:1400/1015;">
+        <div class="stage">
+          <img class="fill" src="images/hanatour/04.png" alt="" loading="lazy">
+
+          <div class="hana-screens__screen" style="left:89px;">
+            <div class="crop" style="left:0; top:275px; width:325px; height:479px;">
+              <img src="images/hanatour/pkg-top.png" alt="" style="left:0; top:-69.46%; width:100%; height:169.44%;">
+            </div>
+            <div class="crop" style="left:0; top:-6px; width:325px; height:281px;">
+              <img src="images/hanatour/pkg-top.png" alt="" style="left:0; top:-0.25%; width:100%; height:288.82%;">
+            </div>
+          </div>
+
+          <div class="hana-screens__screen" style="left:538px; background:#f9f9fb;">
+            <img src="images/hanatour/air.png" alt="" loading="lazy" style="position:absolute; left:0; top:0; width:325px; height:722.222px; object-fit:cover;">
+            <div style="position:absolute; left:18px; top:227px; width:289px; height:92px; background:#fff;"></div>
+            <div class="hana-screens__box" style="left:18px; top:227px; width:103px; height:42px;"></div>
+            <div class="hana-screens__box" style="left:18px; top:227px; width:141px; height:42px;"></div>
+            <div class="hana-screens__box" style="left:18px; top:277px; width:289px; height:42px;"></div>
+            <div class="hana-screens__box" style="left:166px; top:227px; width:141px; height:42px;"></div>
+            <div class="crop" style="left:33px; top:241px; width:73px; height:13px;">
+              <img src="images/hanatour/air.png" alt="" style="left:-45.21%; top:-1853.85%; width:445.21%; height:5555.55%;">
+            </div>
+            <div class="crop" style="left:181px; top:241px; width:73px; height:13px;">
+              <img src="images/hanatour/air.png" alt="" style="left:-45.21%; top:-1853.85%; width:445.21%; height:5555.55%;">
+            </div>
+            <div style="position:absolute; left:45px; top:192.5px; width:87.5px; height:15px; background:#fff;"></div>
+            <p style="position:absolute; left:67.5px; top:195px; margin:0; font-size:11.52px; line-height:12px; color:#000; white-space:nowrap;">인천/김포</p>
+            <div class="crop" style="left:33px; top:291px; width:103px; height:14px;">
+              <img src="images/hanatour/air.png" alt="" style="left:-31.07%; top:-2078.57%; width:315.53%; height:5158.73%;">
+            </div>
+          </div>
+
+          <div class="hana-screens__screen" style="left:984px;">
+            <img src="images/hanatour/htl.png" alt="" loading="lazy" style="position:absolute; left:0; top:0; width:325px; height:722.222px; object-fit:cover;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-gray">
+      <div class="section__inner"><img src="images/hanatour/05.png" alt="" width="1400" height="779" loading="lazy"></div>
+    </section>
+    <section class="section bg-white">
+      <div class="section__inner"><img src="images/hanatour/06.png" alt="" width="1400" height="1015" loading="lazy"></div>
+    </section>
+    <section class="section bg-gray">
+      <div class="section__inner"><img src="images/hanatour/07.png" alt="" width="1400" height="1219" loading="lazy"></div>
+    </section>
+    <section class="section bg-white">
+      <div class="section__inner"><img src="images/hanatour/08.png" alt="" width="1400" height="1868" loading="lazy"></div>
+    </section>
+
+    <section class="section info" style="background:#f5f5f5;">
+      <div class="info__inner">
+        <div class="info__item">
+          <p class="info__label">Period</p>
+          <p class="info__value">2018.12 ~ 2019.06</p>
+        </div>
+        <div class="info__item">
+          <p class="info__label">Contribution</p>
+          <p class="info__value">기획 30%, 디자인 70%</p>
+          <p class="info__note">담당했던 역할에 대한 평균 기여도</p>
+        </div>
+        <div class="info__item">
+          <p class="info__label">Role</p>
+          <p class="info__value">컨셉, 디자인 시스템, 서브 메인,<br>리스트, 상세, 마이페이지, 캘린더</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__grid">
+      <div>
+        <p class="site-footer__headline">Have a project<br>in mind?</p>
+        <a class="site-footer__btn" href="mailto:jeeeun.design@gmail.com">Get in touch <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5"/></svg></a>
+      </div>
+      <div class="site-footer__col">
+        <h2>Contact</h2>
+        <a href="mailto:jeeeun.design@gmail.com">jeeeun.design@gmail.com</a>
+      </div>
+      <div class="site-footer__col">
+        <h2>Menu</h2>
+        <ul>
+          <li><a href="./">Work</a></li>
+          <li><a href="#" data-about>About</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="site-footer__copy">© 2026 Jeeeun.design</p>
+  </footer>
+
+<script src="js/stage.js"></script>
+  <script src="js/gnb.js"></script>
+  <script src="js/about.js"></script>
+  <script src="js/detail.js"></script>
+</body>
+</html>

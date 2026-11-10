@@ -88,11 +88,19 @@ body {
 }
 
 .gnb__logo {
+  display: flex;
+  align-items: center;
   font-size: 34px;
   line-height: normal;
   color: var(--text-logo);
   transform-origin: left center;
   transition: opacity 0.2s, transform 0.4s var(--ease);
+}
+
+.gnb__logo img {
+  display: block;
+  width: 60px;
+  height: 40px;
 }
 
 .gnb__logo:hover {
@@ -131,6 +139,10 @@ body {
   }
   .gnb__logo {
     font-size: 24px;
+  }
+  .gnb__logo img {
+    width: 42px;
+    height: 28px;
   }
   .gnb__menu {
     gap: 24px;

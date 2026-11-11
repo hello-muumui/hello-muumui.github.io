@@ -762,6 +762,11 @@ html:has(.about-dialog[open]) {
   color: rgba(255, 255, 255, 0.5);
 }
 
+/* TEMP: 위시켓 지원 기간 동안 연락처 숨김. 되돌리려면 이 블록을 지운다. */
+.site-footer__grid > :has(a[href^="mailto:"]) {
+  display: none;
+}
+
 @media (max-width: 900px) {
   .site-footer__grid {
     grid-template-columns: 1fr 1fr;

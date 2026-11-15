@@ -793,3 +793,31 @@ html:has(.about-dialog[open]) {
     margin-top: 48px;
   }
 }
+
+/* ---------- Main: mobile cards ----------
+   Thumbnail stays a full square; the caption sits below it in normal flow,
+   so the phone-to-caption gap is the same even when the subtitle wraps. */
+@media (max-width: 640px) {
+  .work-list {
+    padding: 8px 16px 40px;
+    gap: 20px;
+  }
+  .card {
+    aspect-ratio: auto;
+  }
+  .card .card__media,
+  .card:hover .card__media {
+    position: relative;
+    inset: auto;
+    aspect-ratio: 1;
+    transform: none;
+  }
+  .card .card__info {
+    position: relative;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    margin: 0 16px 16px;
+    transform: none;
+  }
+}

@@ -119,6 +119,7 @@ body {
   font-size: 20px;
   line-height: normal;
   color: var(--text-menu);
+  white-space: nowrap;
   transition: opacity 0.2s;
 }
 
@@ -820,4 +821,11 @@ html:has(.about-dialog[open]) {
     margin: 0 16px 16px;
     transform: none;
   }
+}
+
+/* 새 탭으로 열리는 메뉴 표시 */
+.ext-arrow {
+  display: inline-block;
+  margin-left: 2px;
+  font-size: 0.85em;
 }
